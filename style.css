@@ -2757,6 +2757,9 @@ body.services-modern {
 
 .services-hero-frame img {
   width: 100%;
+  display: block;
+  /* aspect-ratio: 4 / 3; */
+  min-height: 260px;
   border-radius: 18px;
   object-fit: cover;
 }
