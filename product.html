@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products Page</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
      <!--=============== FAVICON ===============-->
      <link rel="shortcut icon" href="" type="image/x-icon">
 
@@ -24,7 +28,7 @@
    />
 
    <!-- card Swiper -->
-   <link rel="style" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css">
 
    <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -41,258 +45,154 @@
 
 </head>
 
-<body>
+<body class="product-modern">
+  <header class="header" id="header">
+    <nav class="nav container modern-nav">
+      <a href="index.html" class="nav__logo" aria-label="Destiny Affirmation Cards Home">
+        <img src="images/DESTINY LOGO FINAL copy.png" alt="Destiny logo">
+      </a>
 
-  <!-- header -->
-  <header class="header scroll-header" id="header">
-<nav class="nav container">
-  <a href="index.html" class="nav__logo">
-    <img src="images/DESTINY LOGO FINAL copy.png" alt="logo"></a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav-item"><a href="index.html" class="nav__link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="about.html" class="nav__link"><span>About</span></a></li>
+          <li class="nav-item"><a href="services.html" class="nav__link"><span>Services</span></a></li>
+          <li class="nav-item"><a href="product.html" class="nav__link active-link"><span>Products</span></a></li>
+          <li class="nav-item"><a href="contact.html" class="nav__link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+
+      <i class="ri-moon-line change-theme" id="theme-button" aria-label="Toggle theme"></i>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-hero-modern">
+      <div class="product-ambient product-ambient-one"></div>
+      <div class="product-ambient product-ambient-two"></div>
+      <div class="container product-hero-grid">
+        <article class="product-hero-copy">
+          <p class="eyebrow">Product</p>
+          <h1>Thriving Through Anxiety Affirmation Cards</h1>
+          <p>
+            A guided card deck designed to support perspective shifts, confidence, and healing-centered reflection.
+            Each set includes 20 affirmation cards with relatable visuals and practical first-person prompts.
+          </p>
+          <div class="product-hero-actions">
+            <a href="mailto:contact@destinymccoy.com?subject=Affirmation%20Cards%20Order" class="btn btn-primary">Order Now</a>
+            <a href="services.html" class="btn btn-secondary">Explore Services</a>
+          </div>
+        </article>
+
+        <aside class="product-hero-visual" aria-label="Affirmation card set preview">
+          <figure class="product-frame">
+            <img src="images/4P5A9705.jpg" alt="Affirmation cards on display">
+          </figure>
+          <div class="product-badge">20 cards in each set</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="product-gallery-section">
+      <div class="container">
+        <p class="eyebrow centered">Deck Preview</p>
+        <div class="product-gallery-grid">
+          <figure class="product-gallery-card">
+            <img src="images/4P5A9702.jpg" alt="Affirmation cards arranged on a table">
+          </figure>
+          <figure class="product-gallery-card">
+            <img src="images/4P5A9705.jpg" alt="A close-up of affirmation cards">
+          </figure>
+          <figure class="product-gallery-card">
+            <img src="images/4P5A9707.jpg" alt="Destiny showcasing wellness materials">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-options-section">
+      <div class="container">
+        <h2 class="product-section-title">Choose Your Pack</h2>
+        <div class="product-options-grid">
+          <article class="product-option-card featured">
+            <h3>Single Deck</h3>
+            <p class="price">$24.97</p>
+            <p>Perfect for personal daily use and individual reflection practices.</p>
+            <ul>
+              <li>20 affirmation cards</li>
+              <li>Perspective-shifting prompts</li>
+              <li>Designed for anxiety support</li>
+            </ul>
+            <a href="mailto:contact@destinymccoy.com?subject=Single%20Deck%20Order" class="btn btn-primary">Buy Single Deck</a>
+          </article>
+
+          <article class="product-option-card">
+            <h3>3-Deck Bundle</h3>
+            <p class="price">$69.00</p>
+            <p>Great for gifting, coaching clients, or group wellness circles.</p>
+            <ul>
+              <li>3 full decks included</li>
+              <li>Priority fulfillment</li>
+              <li>Ideal for small groups</li>
+            </ul>
+            <a href="mailto:contact@destinymccoy.com?subject=3-Deck%20Bundle%20Order" class="btn btn-secondary">Request Bundle</a>
+          </article>
+
+          <article class="product-option-card">
+            <h3>Team Package</h3>
+            <p class="price">Custom</p>
+            <p>For organizations, schools, and wellness facilitators needing volume orders.</p>
+            <ul>
+              <li>Bulk pricing options</li>
+              <li>Custom quantity planning</li>
+              <li>Support for implementation</li>
+            </ul>
+            <a href="mailto:contact@destinymccoy.com?subject=Team%20Package%20Inquiry" class="btn btn-secondary">Contact For Pricing</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-cta-band">
+      <div class="container product-cta-wrap">
+        <h2>Need help deciding the right pack?</h2>
+        <a href="contact.html" class="btn btn-primary">Talk With Destiny</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer-modern">
+    <div class="container footer-modern-grid">
+      <div>
+        <img src="images/DESTINY LOGO FINAL copy.png" alt="Destiny logo" class="footer-brand">
+        <p>Affirmation tools and wellness resources designed to support sustainable emotional healing.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.destinymccoy.com" target="_blank" rel="noopener noreferrer">www.destinymccoy.com</a></li>
+          <li><a href="mailto:contact@destinymccoy.com">contact@destinymccoy.com</a></li>
+          <li><a href="tel:+18326997921">(832) 699-7921</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">OE Software Solutions © 2026</p>
+  </footer>
+
+  <a href="#" aria-label="scroll up button" class="scroll-up" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
   </a>
 
-  <div class="nav__menu" id="nav-menu">
-    <ul class="nav__list">
-      <li class="nav-item active">
-        <a href="index.html" class="nav__link">
-         
-          <span>Home</span></a></li>
-
-          <li class="nav-item">
-            <a href="about.html" class="nav__link">
-            
-              <span>About</span></a></li>
-
-              <li class="nav-item">
-                <a href="services.html" class="nav__link">
-                
-                  <span>Services</span></a></li>
-
-              <li class="nav-item">
-                <a href="product.html" class="nav__link">
-            
-                  <span>Products</span></a></li>
-
-                  <li class="nav-item">
-                    <a href="contact.html" class="nav__link">
-                  
-                      <span>Contact</span></a></li>
-    </ul>
-  </div>
-  <!-- Theme change btn -->
-  <i class="ri-moon-line change-theme" id="theme-button"></i>
-</nav>
-  </header>
-  <!-- header end -->
-
-  <div class="container-fulid">
-  
- 
-<!-- Affimation Cards -->
-<section>
-<div class="service-package">
-
-  <div class="heading">
- <h2>Affirmation Cards.</h2>
- <p>Our “Thriving Through Anxiety” Affirmation Card Set is carefully crafted to inspire empowerment.Each card is designed with relatable images that reinforce intention, goal-setting, 
-  and positive perspective-shifting, instilling confidence in the reader. 
-  Every first-person sentence guides the readers through breaking cycles of self-limiting beliefs that are often connected to the root of trauma and anxiety. The set includes 20 cards.
-</p> 
- </div>
-
- 
-
-
-  <div class="ex-container container">
-    <div class="ex-card">
-      <figure class="ex-card__thumb">
-        <img src="images/4P5A9707.jpg" alt="Picture of Affirmation Cards 1" class="ex-card__images">
-        <!-- <figcaption class="ex-card__caption">
-          <h2 class="ex-card__titles"></h2>
-          <p class="ex-card__snippet"></p>
-          <a href="" class="card__button" aria-label=""></a>
-        </figcaption> -->
-      </figure>
-    </div>
-  
-    <div class="ex-card">
-      <figure class="ex-card__thumb">
-        <img src="images/Photo Resize.png" alt="Picture of Affirmation Cards 3" class="ex-card__images">
-        <!-- <figcaption class="ex-card__caption">
-          <h2 class="ex-card__titles"></h2>
-          <p class="ex-card__snippet"></p>
-          <a href="" class="ex-card__button"></a>
-        </figcaption> -->
-      </figure>
-    </div>
-  
-    <div class="ex-card">
-      <figure class="ex-card__thumb">
-        <img src="images/4P5A9705.jpg" alt="Picture of Affirmation Cards 2" class="ex-card__images">
-        <!-- <figcaption class="ex-card__caption">
-          <h2 class="ex-card__titles"></h2>
-          <p class="ex-card__snippet"></p>
-          <a href="" class="ex-card__button"></a>
-        </figcaption> -->
-      </figure>
-    </div>
-  </div>
-
-  
- </div>
-</section>
-  
-  
-
-
-
-    <!-- Product Card -->
-    <div class="container">
-      <div class="row">
-        <div class="heading">
-          <h2>Our Products</h2>
-         </div>
-      </div>
-    </div>
-    
-    
-
-    
-      <div class="product-cards-container">
-        <div class="product-box">
-          <div class="gallery">
-            <img src="/images/4P5A9707.jpg" id="productImg" alt="product 1 image">
-            <div class="controls">
-              <span class="controls-btn active"></span>
-              <span class="controls-btn"></span>
-              <span class="controls-btn"></span>
-            </div>
-            </div>
-            <div class="details">
-              <h2>Thriving Through Anxiety Affirmation Cards Pack
-              </h2>
-                <h3>$24.97</h3>
-                <p>Affrimation cards for women with anxiety. 
-                  </p>
-                <form>
-                  <div class="quantiny-select">
-                    <p>Quantiny</p>
-                    <input type="number" value="1" aria-label="number">
-                  </div>
-                  <button type="button">Buy Now</button>
-                </form>
-            </div>
-            </div>
-      </div>
-   
-      
-     
-  
-
-
-    <!-- Product Card End -->
- 
-
-     
-  <!-- Footer  -->
-  <footer class="footer section">
-    <div class="footer__container container-fluid">
-      <div class="row text-center">
-        <div class="col-lg-3 col-md-6">
-          <img src="images/DESTINY LOGO FINAL copy.png" class="footer__logo" alt="footer logo">
-          <p class="footer__description">
-            There is no health without mental health.
-          </p>
-          <h1><span class="magic  text-wrap">Thriving through anxiety</span></h1>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h3 class="footer__title">Company</h3>
-          <div class="footer__links-container">
-            <ul class="footer__links">
-              <li>
-                <a href="product.html" class="footer__link">Shop</a>
-              </li>
-              <li>
-                <a href="contact.html" class="footer__link">Contact</a>
-              </li>
-              <li>
-                <a href="about.html" class="footer__link">About</a>
-              </li>
-            </ul>
-          </div>
-          
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h3 class="footer__title">Contact Us</h3>
-          <ul class="footer__social">
-            <li>
-              <a href="https://www.facebook.com/profile.php?id=100068659340371" aria-label="connect with us on Facebook" rel="noopener" target="_blank" class="footer__social-link">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/iamdestinymccoy/" aria-label="connect with us on Instagram" rel="noopener" target="_blank" class="footer__social-link">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h3 class="footer__title">Information</h3>
-          <ul>
-            <li>
-              <a href="http://www.destinymccoy.com"><i class="fas fa-globe"></i>:www.destinymccoy.com</a>
-            </li>
-            <li>
-              <a href="mailto:contact@destinymccoy.com"><i class="fas fa-envelope"></i>:contact@destinymccoy.com</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer__info container">
-      <span class="footer__copy">OE Coders Corporation / Glofabs Enterprises</span>
-      <a href="terms.html" class="footer__privacy">Terms and conditions</a>
-    </div>
-  </footer>
-</div>
-  <!-- Footer End  -->
- 
-                           
-                                 
- 
- 
- 
- 
-                      
- <!--  Card Swiper JS  -->
- 
- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-        <!-- Scroll Up  -->
-        <a href="#" aria-label="scroll up buttom" class="scroll-up" id="scroll-up">
-         <i class="ri-arrow-up-line"></i>
-       </a>
- 
-        <!-- Scroll Reveal  -->
-        <script src=""></script>
-
-        <!-- Bootstrap JS -->
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
- 
-         <!-- Swiper JS  -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
- 
-  <!-- Card Swiper -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"></script>
- 
-  <!-- Ion Icon -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
- <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-     
-       <!--Main JS    -->
-   <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
      </body>
  </html>
  
