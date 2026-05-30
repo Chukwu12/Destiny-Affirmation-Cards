@@ -1,21 +1,68 @@
-# My Awesome Project
- I had the privilege to collaborate with a client in bringing their vision to life through a dynamic e-commerce website.
-  [Link to the project](https://destinymccoy.netlify.app/)
+# ✨ Destiny Affirmation Cards Website
 
-  ## How It's Made:
-  Tech used: HTML, CSS, JavaScript, Bootstrap, Node.js, WordPress
-  
-  At the heart of this project lies a meticulously designed front end, where HTML, CSS, and JavaScript converge to create an immersive user experience. From captivating landing pages that introduce visitors to the client's story and values to intuitive product galleries that highlight the beauty and functionality of each item, every element of the website is crafted with precision and attention to detail.
-  On the backend, I implemented a robust architecture using languages like Node.js and frameworks like WordPress to power the website's functionality. From managing user accounts and processing secure payments to handling inventory management and order fulfillment, the backend infrastructure ensures smooth operations and optimal performance at every step of the customer journey.
-  Beyond its technical prowess, this project is a testament to the collaborative spirit and shared vision between myself and the client. Through open communication, iterative feedback, and a relentless commitment to excellence, we were able to deliver a website that not only meets but exceeds the client's expectations, empowering them to connect with their audience and grow their business in the digital landscape.
+[![Website](https://img.shields.io/badge/Website-Live-16a34a?style=for-the-badge)](https://destinymccoy.netlify.app/)
+![Built With HTML](https://img.shields.io/badge/Built%20With-HTML%2FCSS%2FJS-0f172a?style=for-the-badge)
+![Type](https://img.shields.io/badge/Type-Static%20Frontend-f59e0b?style=for-the-badge)
 
-  ## Lessons Learned:
-  Creating a website for a client was a profound learning experience that enriched my understanding of the intricate balance between technical proficiency and effective communication. Throughout the project, I learned the importance of active listening and empathetic collaboration, as well as the value of translating client visions into tangible digital solutions. Working closely with the client taught me the significance of aligning technical decisions with their overarching goals and objectives, ensuring that every aspect of the website resonated with their brand identity and audience. Moreover, I discovered the power of adaptability and resilience
-  in the face of challenges, as well as the necessity of embracing feedback as a catalyst for continuous improvement.
+A premium multi-page brand website for Destiny Affirmation Cards, crafted to showcase products, services, and story with clarity, warmth, and intention.
 
-  ## Examples:
-  Take a look at these couple examples that I have in my own portfolio (still in the works):
-  
-  [Content-Creator website](https://mansaleafproduction.netlify.app/)
-  
-  [Amor-Hairsyle website](https://amourhairstyles.netlify.app/)
+🔗 **Live Demo:** [destinymccoy.netlify.app](https://destinymccoy.netlify.app/)
+
+## 🖼️ Preview
+
+![Destiny Affirmation Cards preview](images/Home.jpg)
+
+## 🚀 Overview
+
+This project is designed as a conversion-aware front-end experience with responsive layout behavior, expressive visuals, and clear navigation that supports product discovery.
+
+## 🧩 Features
+
+- Responsive multi-page layout
+- Product and service-focused content pages
+- Contact and terms pages
+- Smooth UI interactions with JavaScript
+- Reusable styling structure with CSS/SCSS assets
+
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3 / SCSS
+- JavaScript (Vanilla)
+- jQuery UI
+- Swiper.js
+
+## 📁 Project Structure
+
+- `index.html` - Home page
+- `about.html` - About page
+- `services.html` - Services page
+- `product.html` - Product page
+- `contact.html` - Contact page
+- `terms.html` - Terms and conditions
+- `js/script.js` - Front-end behavior
+- `css/` - Main styles and vendor styles
+- `images/` - Image assets
+
+## ▶️ Run Locally
+
+Because this is a static front-end project, you can run it directly:
+
+1. Clone this repository.
+2. Open the project folder.
+3. Open `index.html` in your browser.
+
+Tip: For best development experience, use VS Code Live Server.
+
+## 📚 What I Learned
+
+Building this project reinforced how important it is to turn a brand voice into concrete interface decisions. It strengthened my approach to responsive design, content hierarchy, and collaborative iteration based on feedback.
+
+## 🌐 More Projects
+
+- [Content Creator Website](https://mansaleafproduction.netlify.app/)
+- [Amour Hairstyles Website](https://amourhairstyles.netlify.app/)
+
+---
+
+If you like this project, feel free to fork it and build your own version. ⭐
