@@ -108,26 +108,29 @@ for (let th = 0; th < tab_items.length; th++) {
 let productImg = document.getElementById("productImg");
 let btn = document.getElementsByClassName("controls-btn");
 
-btn[0].onclick = function() {
-  productImg.src = "images/4P5A9707.jpg";
-  for(bt of controls-btn) {
-    bt.classList.remove("active");
+// Guard: this thumbnail-switcher markup isn't present on every page
+if (productImg && btn.length >= 3) {
+  btn[0].onclick = function() {
+    productImg.src = "images/4P5A9707.jpg";
+    for (let bt of btn) {
+      bt.classList.remove("active");
+    }
+    this.classList.add("active");
   }
-  this.classList.add("active");
-}
 
-btn[1].onclick = function() {
-  productImg.src = "images/4P5A9705.jpg";
-  for(bt of controls-btn) {
-    bt.classList.remove("active");
+  btn[1].onclick = function() {
+    productImg.src = "images/4P5A9705.jpg";
+    for (let bt of btn) {
+      bt.classList.remove("active");
+    }
+    this.classList.add("active");
   }
-  this.classList.add("active");
-}
 
-btn[2].onclick = function() {
-  productImg.src = "images/Photo Resize.png";
-  for(bt of controls-btn) {
-    bt.classList.remove("active");
+  btn[2].onclick = function() {
+    productImg.src = "images/Photo Resize.png";
+    for (let bt of btn) {
+      bt.classList.remove("active");
+    }
+    this.classList.add("active");
   }
-  this.classList.add("active");
 }
